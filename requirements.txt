@@ -1,0 +1,10 @@
+ipython
+omegaconf
+pydub
+PyYAML
+torch
+torchaudio
+fastapi
+pydantic
+soundfile
+uvicorn
