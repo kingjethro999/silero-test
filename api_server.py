@@ -16,7 +16,7 @@ stt_model, stt_decoder, stt_utils = silero_stt(language='en', device=device)
 read_batch, split_into_batches, read_audio, prepare_model_input = stt_utils
 
 # Load TTS model (default English)
-tts_model, tts_symbols, tts_sample_rate, tts_example_text, tts_apply = silero_tts(language='en', speaker='v3_en')
+tts_model, tts_symbols, tts_sample_rate, tts_example_text, tts_apply = silero_tts(language='en', speaker='lj_8khz')
 tts_model = tts_model.to(device)
 
 @app.post('/stt')
